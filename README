@@ -1,0 +1,33 @@
+ #===============================================================================
+#
+#         FILE:  checknet.pl
+#
+#        USAGE:  ./checknet.pl
+#                perl checknet.pl
+#
+#  DESCRIPTION:  First I checked if the internet was up by launching a browser
+#                and going to www.google.com.
+#                The I decided to start pinging it. Finally, I added an endless
+#                loop and stuck in 'espeak' so I didnt have to sit at the
+#                computer all day. This was in bash. I finally decided to port
+#                it to perl, in order to clean it up a bit. This is the outcome.
+#                The program will ping google. If it get's a solid connection
+#                (all packets received), then it will say "Internet!" and try
+#                again. It will remain quiet until the solid connection is lost.
+#                To quit, use your shell's terminate sequence. In bash it's
+#                CTRL-C.
+#
+#      OPTIONS:  Pass it options just like you would pass ping. In fact, if you
+#                bring it up as ./checknet -h, it will output ping's help and
+#                possible do weird stuff. Maybe when I learn command line
+#                switches I'll fix that.
+#
+# REQUIREMENTS:  perl, ping, UNIX prompt, espeak
+#         BUGS:  Probably many
+#        NOTES:  ---          
+#       AUTHOR:  Carlos Alberto da Costa Filho, c.dacostaf (gmail)
+#      VERSION:  0.1
+#      CREATED:  Sun Feb 27 20:31:05 BRT 2011
+#     REVISION:  ---
+#=============================================================================== 
+ 
